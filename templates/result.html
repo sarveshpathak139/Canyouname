@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CanYouName</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<style>
+.forms{
+    background-color: #94bbe9;
+    position: relative;
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    height: 130px;
+}
+
+</style>
+
+<body>
+
+    <div class="forms">
+        <div class="logo">
+            <br>
+            <nav class="nav-wrapper transparent">
+                <div class="container">
+                    <a href="" class="brand-logo"><img src="../static/output-onlinepngtools.png" height="70px" alt=""></a>
+                </div>
+            </nav>    
+        </div>
+
+        </div>
+
+
+
+
+    <table class="table">
+        <tr>
+            <th scope="col">
+                <h3>Website</h3>
+            </th>
+            <th scope="col">
+                <h3>Status</h3>
+            </th>
+        </tr>
+
+
+
+    {%for i in result%} 
+
+  
+    
+    <tr>
+        <td>
+            {{i[0]}}
+        </td>
+        <td>
+            {{i[1]}}
+        </td>
+    </tr>
+
+{%endfor%}
+</table>
+</body>
+</html>
